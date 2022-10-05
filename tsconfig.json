@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "./lib",
+    "rootDir": "./src",
+    "target": "es2016",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+  },
+  "exclude": ["node_modules", "dist", "**/*.js", "lib"]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "xiao-koa-template",
+  "version": "0.0.0",
+  "description": "xiao-koa开发demo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./devService.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.7.18",
+    "chokidar": "^3.5.3",
+    "esbuild": "^0.15.9",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "xiao-koa": "^1.0.4",
+    "xiao-koa-mysql": "^1.0.2"
+  }
+}
