@@ -1,8 +1,8 @@
-import { Service, HandlerInterceptor } from 'xiao-koa'
+import { Service, HandlerInterceptor, DefaultContext, DefaultState, Next, ParameterizedContext } from 'xiao-koa'
 
 @Service()
 export default class TokenInterceptor implements HandlerInterceptor {
-  async preHandle(ctx: any, next: any) {
+  async preHandle(ctx: ParameterizedContext<DefaultState, DefaultContext, unknown>, next: Next) {
     if (ctx.request.header['token']) {
       await next()
     } else {
